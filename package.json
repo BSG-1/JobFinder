@@ -2,10 +2,10 @@
   "name": "jobfinder",
   "version": "1.0.0",
   "description": "A Node.js web app that scrapes for job postings",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
     "hunt",
     "job",
     "posting",
-    "job"
+    "job",
+    "jobfinder"
   ],
   "author": "BSG",
   "license": "ISC",
