@@ -8,7 +8,7 @@ const handlebars = require("express-handlebars");
 
 app.engine('.hbs', handlebars({ extname: '.hbs' }));
 
-app.set("PORT: ", PORT);
+app.set("PORT", PORT);
 
 app.use(express.static(path.join(__dirname, 'assets')));
 app.set('views', path.join(__dirname, 'views'));
@@ -19,5 +19,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(app.get('PORT'), function () {
-    console.log("Listening on http://localhost:" + PORT);
+    console.log("Listening on http://localhost:" + app.get('PORT'));
 });
