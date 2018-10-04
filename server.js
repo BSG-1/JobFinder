@@ -14,3 +14,6 @@ app.listen(PORT, () => {
 */
 
 //messing around with a weather app to remember how cheerio and request work
+var request = require("request");
+var cheerio = require("cheerio");
+var url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?&query=" + 94526;
