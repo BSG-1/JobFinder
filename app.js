@@ -16,7 +16,7 @@ app.set('view engine', '.hbs');
 
 app.get('/', function (req, res) {
     //I DONT GET WHY THIS WORKS
-    console.log("Scraping!");
+    console.log("Scraping");
     let results = [];
 
     let url = `https://indreed.herokuapp.com/api/jobs?q=junior+developer&l=san+francisco&limit=50`;
